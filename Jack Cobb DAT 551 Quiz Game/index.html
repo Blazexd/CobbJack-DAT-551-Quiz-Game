@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+</head>
+<body>
+
+<div id="title" class="outlined_box">
+    <h1>The Quiz</h1>
+</div>
+
+<div id="game" class="outlined_box">
+    <div id="game_contents">
+        <!-- The game contents consist of five different "pages", those being the Welcome screen, Quiz select screen, Question screen, Information screen (shows after a question, telling you if you were correct and giving bonus info), and Results screen. The Javascript hides and shows each different page-->
+        <div id="welcome" class="ingame_section active_section" style="opacity: 1; transform: scale(1);">
+            <h1>Welcome to the Plymouth History Quiz!</h1>
+            <div class="image_container">
+                <img src="Quiz B Question 2.jpg" class="ingame_image">
+            </div>
+            <div class="row">
+                <div class="button purple_button" onclick="enter_quiz_select();">Start</div>    
+            </div>
+        </div>
+
+        <div id="quiz_select" class="ingame_section">
+            <h1>Select a Quiz to play!</h1>
+            <div class="row">
+                <div class="button purple_button" onclick="start(0);">Navy Quiz</div>    
+            </div>
+            <div class="row">
+                <div class="button orange_button" onclick="start(1);">Plymouth Quiz</div>    
+            </div>
+            <div class="row">
+                <div class="button blue_button" onclick="return_to_title_screen();">Back</div>    
+            </div>
+        </div>
+
+        <div id="question" class="ingame_section">
+            <h1 id="question_header"></h1>
+            <div class="image_container">
+                <img class="ingame_image" id="question_image">
+            </div>
+            <div id="answers_container"></div>
+        </div>
+        
+        <div id="information" class="ingame_section">
+            <h1 id="information_header"></h1>
+            <div class="image_container">
+                <img class="ingame_image small_image" id="information_image">
+            </div>
+            <p id="information_text"></p>
+            <div class="row">
+                <div class="button purple_button" onclick="finish_reading();">Continue</div>    
+            </div>
+        </div>
+        
+        <div id="results" class="ingame_section">
+            <h1 id="results_header"></h1>
+            <p id="results_message"></p>
+            <div class="row">
+                <div class="button purple_button" onclick="return_to_title_screen();">Restart</div>    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

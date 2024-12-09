@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'arialroundedmtbold';
+  src: URL('arialroundedmtbold.ttf') format('truetype');
+}
+
+body {
+    background-color:lightgray;
+    font-family: 'arialroundedmtbold', Arial, Helvetica, sans-serif;
+    background-image: url("stripes.png");
+
+}
+
+#title {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.outlined_box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    outline: 5px dotted gray;
+}
+
+#game {
+    width: 50%;
+    margin: 0 auto;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    background: white url("background.png") bottom no-repeat;
+    margin-bottom: 70px;
+}
+
+#quiz_select {
+    display: none;
+}
+
+#question {
+    display: none;
+}
+
+#information {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+#game_contents {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ingame_section {
+    text-align: center;
+    width: 100%;
+    transition: 0.3s ease opacity, 0.3s ease transform;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.image_container {
+    margin: 20px;
+}
+
+.ingame_image {
+    max-width: 80%;
+    border-radius: 20px;
+    max-height: 450px;
+}
+
+.small_image {
+    max-width: 50%;
+}
+
+#information_text {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+#answers_container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.button {
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.purple_button {
+    background-color: #C399FF;
+}
+
+.purple_button:hover {
+    background-color: #DAC1FF;
+}
+
+.orange_button {
+    background-color: #FF6A00;
+}
+
+.orange_button:hover {
+    background-color: #FF9651;
+}
+
+.blue_button {
+    background-color: #0094FF;
+}
+
+.blue_button:hover {
+    background-color: #38ACFF;
+}
+
+.pink_button {
+    background-color: #FF6663;
+}
+
+.pink_button:hover {
+    background-color: #FF9593;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
